@@ -66,28 +66,57 @@ header {
 }
 
 .btn-primary {
-    background-color: #3b82f6;
+    background: linear-gradient(
+        45deg,
+        #3b82f6,
+        #8b5cf6,
+        #ec4899
+    );
+    background-size: 200% 200%;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 9999px;
     text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: 
+        0 10px 20px -5px rgba(139, 92, 246, 0.3),
+        0 4px 10px -5px rgba(236, 72, 153, 0.4);
 }
 
 .btn-primary:hover {
-    background-color: #2563eb;
+    background-position: right center;
+    transform: translateY(-3px) translateX(-3px);
+    box-shadow: 
+        0 15px 25px -5px rgba(139, 92, 246, 0.4),
+        0 8px 15px -5px rgba(236, 72, 153, 0.5);
 }
 
 .btn-secondary {
-    border: 1px solid white;
+    background: linear-gradient(
+        45deg,
+        #10b981, /* Green */
+        #3b82f6, /* Blue */
+        #21ffaa  /* Orange */
+    );
+    background-size: 200% 200%;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 9999px;
     text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: 
+        0 10px 20px -5px rgba(59, 130, 246, 0.3), /* Blue shadow */
+        0 4px 10px -5px rgba(245, 158, 11, 0.4);  /* Orange shadow */
 }
 
 .btn-secondary:hover {
-    background-color: white;
-    color: #1f2937;
+    background-position: right center;
+    transform: translateY(-3px) translateX(3px);
+    box-shadow: 
+        0 15px 25px -5px rgba(59, 130, 246, 0.4), /* Stronger blue shadow */
+        0 8px 15px -5px rgba(11, 245, 167, 0.5);  /* Stronger orange shadow */
 }
 
 /* About Section */
@@ -271,6 +300,7 @@ form button {
     border-radius: 9999px;
     border: none;
     cursor: pointer;
+    
 }
 
 form button:hover {
