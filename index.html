@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Developer Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
-<body class="bg-gray-100">
+<body>
     <!-- Navigation -->
-    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">Youcef Omar</h1>
-            <div class="space-x-4">
-                <a href="#about" class="hover:text-blue-400">About</a>
-                <a href="#skills" class="hover:text-blue-400">Skills</a>
-                <a href="#projects" class="hover:text-blue-400">Projects</a>
-                <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <nav>
+        <div class="nav-container">
+            <h1>Youcef Omar</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gray-800 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Python Developer</h1>
-            <p class="text-xl mb-8">Specializing in Automation, AI, and Cryptography</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full">Contact Me</a>
-                <a href="#projects" class="border border-white hover:bg-white hover:text-gray-800 px-6 py-2 rounded-full">View Projects</a>
+    <header>
+        <div class="hero-container">
+            <h1>Python Developer</h1>
+            <p>Specializing in Automation, AI, and Cryptography</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+                <a href="#projects" class="btn-secondary">View Projects</a>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-            <div class="max-w-3xl mx-auto">
-                <p class="text-gray-700 mb-4">
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
                     I'm a Python developer with 5+ years of experience in developing automation solutions, 
                     implementing AI algorithms, and working with cryptographic systems. My passion lies in 
                     creating efficient, secure, and intelligent solutions to complex problems.
                 </p>
-                <p class="text-gray-700">
+                <p>
                     With a background in Computer Science and a focus on cybersecurity, I've helped 
                     organizations streamline their processes through automation, implement machine learning 
                     solutions, and enhance their security through modern cryptographic techniques.
@@ -53,14 +53,14 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-200 py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
                 <!-- Automation -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Automation</h3>
-                    <ul class="space-y-2">
+                <div class="skill-card">
+                    <h3>Automation</h3>
+                    <ul>
                         <li>• Selenium</li>
                         <li>• Pytest</li>
                         <li>• Jenkins</li>
@@ -69,9 +69,9 @@
                     </ul>
                 </div>
                 <!-- AI & ML -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">AI & ML</h3>
-                    <ul class="space-y-2">
+                <div class="skill-card">
+                    <h3>AI & ML</h3>
+                    <ul>
                         <li>• TensorFlow</li>
                         <li>• PyTorch</li>
                         <li>• Scikit-learn</li>
@@ -80,9 +80,9 @@
                     </ul>
                 </div>
                 <!-- Cryptography -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Cryptography</h3>
-                    <ul class="space-y-2">
+                <div class="skill-card">
+                    <h3>Cryptography</h3>
+                    <ul>
                         <li>• PyCrypto</li>
                         <li>• OpenSSL</li>
                         <li>• Hash Functions</li>
@@ -95,60 +95,60 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Automated Trading Bot</h3>
-                    <p class="text-gray-600 mb-4">
+                <div class="project-card">
+                    <h3>Automated Trading Bot</h3>
+                    <p>
                         Developed a cryptocurrency trading bot using Python, implementing advanced 
                         algorithms for market analysis and automated trading decisions.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">ML</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Crypto</span>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Crypto</span>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Security Scanner</h3>
-                    <p class="text-gray-600 mb-4">
+                <div class="project-card">
+                    <h3>Security Scanner</h3>
+                    <p>
                         Built a network security scanner that automatically detects vulnerabilities 
                         and generates detailed reports with remediation suggestions.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Security</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Automation</span>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Security</span>
+                        <span>Automation</span>
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Face Recognition System</h3>
-                    <p class="text-gray-600 mb-4">
+                <div class="project-card">
+                    <h3>Face Recognition System</h3>
+                    <p>
                         Implemented a real-time face recognition system using deep learning, 
                         achieving 99.2% accuracy in controlled environments.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">AI</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">OpenCV</span>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>AI</span>
+                        <span>OpenCV</span>
                     </div>
                 </div>
                 <!-- Project 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Secure File Storage</h3>
-                    <p class="text-gray-600 mb-4">
+                <div class="project-card">
+                    <h3>Secure File Storage</h3>
+                    <p>
                         Created a secure file storage system with end-to-end encryption and 
                         automatic backup capabilities using AWS S3.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">AWS</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Cryptography</span>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>AWS</span>
+                        <span>Cryptography</span>
                     </div>
                 </div>
             </div>
@@ -156,44 +156,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-800 text-white py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
-            <div class="max-w-xl mx-auto">
-                <div class="flex justify-center space-x-8 mb-8">
-                    <a href="#" class="hover:text-blue-400">
-                        <i class="fab fa-github text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
-                    <a href="#" class="hover:text-blue-400">
-                        <i class="fas fa-envelope text-2xl"></i>
-                    </a>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
-                <form class="space-y-4">
-                    <div>
-                        <input type="text" placeholder="Name" class="w-full p-2 rounded text-gray-800">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" class="w-full p-2 rounded text-gray-800">
-                    </div>
-                    <div>
-                        <textarea placeholder="Message" rows="4" class="w-full p-2 rounded text-gray-800"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-full w-full">
-                        Send Message
-                    </button>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 John Doe. All rights reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
     </footer>
 </body>
 </html>
