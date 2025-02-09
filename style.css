@@ -66,6 +66,7 @@ header {
 }
 
 .btn-primary {
+    font-weight: bold;
     background: linear-gradient(
         45deg,
         #3b82f6,
@@ -93,6 +94,7 @@ header {
 }
 
 .btn-secondary {
+    font-weight: bold;
     background: linear-gradient(
         45deg,
         #10b981, /* Green */
